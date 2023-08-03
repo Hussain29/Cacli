@@ -14,3 +14,4 @@ To run Cacli, execute the following command in your terminal:
 ```
 npx serve .
 ```
+Then just open the web application in your browser.
