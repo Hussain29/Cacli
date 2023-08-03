@@ -11,4 +11,6 @@ cd Cacli
 # Usage
 To run Cacli, execute the following command in your terminal:
 
-`npx serve . `
+```
+npx serve .
+```
