@@ -1,0 +1,159 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+
+.app {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+.calculator {
+	justify-content: center;
+	background-color: #262933;
+	width: 100%;
+	max-width: 600px;
+	min-height: 640px;
+	display: flex;
+	flex-direction: column;
+	border-radius: 1.5rem;
+	overflow: hidden;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0);
+}
+
+.display {
+	min-height: 260px;
+	padding: 1.5rem;
+	padding-bottom: 35px;
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+	color: #072c06;
+	text-align: right;
+	flex: 1 1 0%;
+}
+
+.display .content {
+	background-color: #daffe1;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	padding: 1rem;
+	border-radius: 1.5rem;
+	height: 190px;
+	box-shadow: 0 0 0 4px #186c20;
+	width: 100%;
+	max-width: 100%;
+	overflow: auto;
+}
+
+.display .input {
+	text-align: start;
+	font-weight: 700;
+	width: 100%;
+	font-size: 1.9rem;
+	margin-bottom: 3.6rem;
+}
+
+.display .output {
+	font-size: 3.4rem;
+	font-weight: 600;
+	height: 55px;
+	width: 100%;
+	border-radius: 1.5rem;
+	padding: 3px;
+}
+
+.display .operator {
+	color: #000000;
+}
+
+.display .brackets,
+.display .percent {
+	color: #000000;
+}
+
+.toggle-1{
+	display: inline-block;
+	color: white;
+	font-weight: 500;
+	padding: 1.1rem;
+	border-radius: 1rem;
+	margin-bottom: 400px;
+	margin-left: 30px;
+	box-shadow: 0px 0px 5px #000000;
+	background-color: #ad1c1c;
+}
+
+.keys {
+	background-color: #afafaf;
+	padding: 1.5rem;
+	padding-bottom: 3rem;
+	border-radius: 1.5rem 1.5rem 0 0;
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	grid-template-rows: repeat(4, 1fr);
+	grid-gap: 1.3rem;
+	box-shadow: 0px -2px 16px rgba(0, 0, 0, 0.2);
+	
+}
+
+
+.keys .key {
+	position: relative;
+	cursor: pointer;
+	display: block;
+	height: 0;
+	box-shadow: 0 0 0 0px #2e2e2e, 0 0.38em 0 0 #747474;
+	transform: translate3d(0, 0.75em, -1em);
+	transition: transform 10ms cubic-bezier(0, 0, 0.58, 1), box-shadow 150ms cubic-bezier(0, 0, 0.58, 1);
+	padding-top: 75px;
+	background-color: #262933;
+	border-radius: 0.7rem;
+	transition: 0.2s;
+	user-select: none;
+}
+
+.keys .key span {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 2rem;
+	font-weight: 700;
+	color: #FFF;
+}
+
+.keys .key:hover {
+	transform: translate(0, 0.95em);
+	box-shadow: 0 0 0 0px #2e2e2e, 0 0.3em 0 0 #636363;
+}
+
+.keys .key:active {
+	box-shadow: 0 0 0 1px #2e2e2e, 0 0em 0 0 #636363;
+	transform: translate(0em, 1.3em);
+}
+
+.keys .key.operator span {
+	color: #beff81;
+}
+
+.keys .key.action span {
+	color: white;
+}
+
+.keys .key.action  {
+	background-color: #9ff74d;
+}
+
+.keys .key.delete  {
+	background-color: #28befe;
+}
+
+.keys .key.delete span{
+	font-size: 1.7rem;
+}
